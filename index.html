@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>Hola soy, Alexis David Pame Valencia.</h1>
+        <h1 class="animated-title">Bienvenido</h1>
         <p>Tecnico en asistencia y soporte de tecnologias | Desarrollador Web</p>
     </header>
 
-    <div>
+    <div class="navegation">
         <nav>
             <a href="#about">Acerca de mi</a>
             <a href="#projects">Proyectos</a>
@@ -26,25 +26,30 @@
     </section>
 
     <section id="projects">
-        <h2>Proyectos</h2>
-        <button id="mostrar-1">Proyecto 1</button>
-        <button id="mostrar-2">Proyecto 2</button>
-        <button id="mostrar-3">Proyecto 3</button>
-        <button id="ocultar-todos">Ocultar</button>
 
-        <article id="Project-1" style="display: none;">
+        <h2>Proyectos</h2>
+
+        <div class="buttons">
+            <button id="mostrar-1">Proyecto 1</button>
+            <button id="mostrar-2">Proyecto 2</button>
+            <button id="mostrar-3">Proyecto 3</button>
+            <button id="ocultar-todos">Ocultar</button>
+        </div>
+        
+
+        <article id="Project-1" >
             <h3>Proyecto 1</h3>
            <iframe src="proyecto1.html" frameborder="0"></iframe>
             <p>Descripción del proyecto</p>
         </article>
 
-        <article id="Project-2"  style="display: none;">
+        <article id="Project-2">
             <h3>Proyecto 2</h3>
             <iframe src="proyecto2.html" frameborder="0"></iframe>
             <P>Descipción del proyecto</P>
         </article>
         
-        <article id="Project-3"  style="display: none;">
+        <article id="Project-3">
             <h3>Proyecto 3</h3>
             <iframe src="proyecto3.html" frameborder="0"></iframe>
         </article>
@@ -69,7 +74,7 @@
     <script src="js/script.js"> </script>
 
     <footer>
-        <p>© Todos los derechos son reservados por el autor.</p>
+        <p>© 2024 Todos los derechos son reservados por el autor.</p>
     </footer>
 </body>
 </html>
