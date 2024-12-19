@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portafolio</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,10 +14,9 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#projects">Servicios</a></li>
+            <li><a href="#contactForm">Contacto</a></li>
         </ul>
     </nav>
     
@@ -40,19 +40,25 @@
             
 
             <article id="Project-1" >
-                <h3>Proyecto 1</h3>
-            <iframe src="proyecto1.html" frameborder="0"></iframe>
-                <p>Descripción del proyecto</p>
+                <h3>Capchat</h3>
+                <p>La página tiene un diseño limpio y funcional, centrado en un ejercicio visual que reta al usuario a seleccionar todas las imágenes que representan un carro entre un conjunto de opciones. 
+                    Esto podría usarse como un juego educativo, un sistema de validación visual o incluso como parte de un proceso de autenticación.</p>
+                <iframe src="proyecto1.html" frameborder="0"></iframe>
             </article>
 
             <article id="Project-2">
-                <h3>Proyecto 2</h3>
-                <iframe src="proyecto2.html" frameborder="0"></iframe>
-                <P>Descipción del proyecto</P>
+                <h3>Calculadora Básica</h3>
+                <p>Esta página web presenta una calculadora interactiva básica, diseñada para realizar operaciones matemáticas simples como suma, resta, multiplicación y división.
+                    Su diseño es limpio, intuitivo y funcional, ideal para usuarios que necesitan realizar cálculos rápidos de manera sencilla.
+               </p>
+                <iframe src="proyecto2.html" frameborder="0"></iframe>  
             </article>
             
             <article id="Project-3">
-                <h3>Proyecto 3</h3>
+                <h3>Calculadora de Índice de Masa Corporal</h3>
+                <p>Esta página web es una herramienta interactiva que permite a los usuarios calcular su Índice de Masa Corporal (IMC) ingresando sus datos personales, como peso y estatura. 
+                    Es ideal para quienes desean conocer su estado de salud relacionado con el peso corporal de forma rápida y sencilla.
+                </p>
                 <iframe src="proyecto3.html" frameborder="0"></iframe>
             </article>
         </section>
@@ -60,7 +66,7 @@
 
         <section class="contact">
             <h2>Contacto</h2>
-            <form action="">
+            <form id="contactForm">
 
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name">
@@ -68,24 +74,30 @@
                 <label for="email">Correo</label>
                 <input type="email" id="email" name="email">
 
-                <label for="">Numero de telefono</label>
-                <input type="number" id="phone" name="phone">
-
-                <label for="text">Mensaje</label>
+                <label for="message">Mensaje</label>
                 <textarea name="message" id="message" placeholder="Escribe tu Mensaje" rows="5" required></textarea>
                 
-                
-                
                 <button type="submit">Enviar</button>
+
             </form>
+            <p id="statusMessage"></p>
         </section>
     </main>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"> </script>
 
     <footer>
         <p class="copy">© 2024 Todos los derechos son reservados por el autor.</p>
     </footer>
+
+    <script>
+        //inicilizar emailjs con tu clave publica
+        (function(){
+            emailjs.init("R5UWCa6jxfTf_aFhP"); //Reemplazar con la clave publica
+        })();
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"> </script>
+
+   
 </body>
 </html>

@@ -63,9 +63,7 @@ main{
   #projects{
     display: flex;
     text-align: center;
-    margin-bottom: 2rem;
     flex-direction: column;
-    background: rgb(82,103,238);
     background: linear-gradient(9deg, rgba(82,103,238,1) 0%, rgba(109,244,158,1) 38%, rgba(70,199,161,1) 59%, rgba(64,64,218,1) 100%);
     border-radius: 12px;
     padding: 1rem;; 
@@ -74,8 +72,6 @@ main{
 
   article{
     display: none; /*par ocultar las paginas*/
-    position: relative;
-    text-align: center;
   }
 
   article iframe{
